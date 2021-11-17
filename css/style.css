@@ -1,3 +1,112 @@
+/* intuitivnejsi box-sizing */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  font: 24px/1 sans-serif;
+  margin: 0;
+}
+
+.hlavicka {
+  margin-bottom: 100px;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu li {
+  margin: 5px, 20px;
+}
+
+.menu a {
+  padding: 20px;
+  text-decoration: none;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+.pozadi {
+  height: 500px;
+  width: 100%;
+  background-image: url(/images/lod.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  margin: 20px 100px;
+}
+
+.main article {
+  flex-basis: 60%;
+  text-align: justify;
+}
+
+h1,
+h2 {
+  margin-left: 100px;
+}
+
+.wens input,
+.wens text,
+.wens button {
+  display: block;
+}
+
+.wens input,
+.wens text {
+  margin-top: 10px;
+}
+
+.wens {
+  margin-left: 100px;
+}
+
+.wens textarea {
+  width: 60%;
+  height: 60%;
+}
+
+.wens button {
+  padding: 20px;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 30px;
+  color: whitesmoke;
+  font-size: 16;
+}
+
+.paticka {
+  background-color: black;
+  height: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.paticka a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-top: 10px;
+}
+
+/* ---------------------------------------------------- 
+
+
+--------------------------------------------------- */
 h1 {
   color: #ff4400;
 }/*# sourceMappingURL=style.css.map */
