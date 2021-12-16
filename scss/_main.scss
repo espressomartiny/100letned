@@ -1,0 +1,54 @@
+@use 'colors';
+
+/* intuitivnejsi box-sizing */
+*, :after, :before { box-sizing: border-box; }
+* {	font-family: 'Karla', sans-serif;}
+
+body {
+	margin: 0;
+}
+
+
+.main {
+	display: flex;
+	margin: 20px 100px;
+}
+.main article {
+	flex-basis: 60%;
+	text-align: justify;
+}
+h1,
+h2 {
+	margin-left: 100px;
+}
+h1 {
+	color: colors.$secondary;
+    margin-top: 100px;
+}
+a:hover {
+	color: colors.$secondary;
+}
+
+@media screen and (max-width: 640px) {
+h1,
+h2 {
+	width: 80%;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+}
+.main article {
+	flex-basis: 100%;
+	flex-grow: 1;
+	text-align: left;
+	padding: 0 30px;
+
+}
+}

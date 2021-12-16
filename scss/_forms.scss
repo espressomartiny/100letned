@@ -1,0 +1,29 @@
+@use 'colors';
+
+.wens input,
+.wens text,
+.wens button {
+	display: block;
+}
+.wens input,
+.wens text {
+	margin-top: 10px;
+}
+.wens {
+	margin-left: 100px;
+}
+
+.wens textarea {
+	width: 60%;
+	height: 60%;
+}
+
+.wens button {
+	padding: 20px;
+	background-color: black;
+	border: 3px solid white;
+	border-radius: 30px;
+	color: whitesmoke;
+	font-size: 16;
+
+}

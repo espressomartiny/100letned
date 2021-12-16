@@ -1,0 +1,65 @@
+@use 'colors';
+
+//.hlavicka {
+//	margin-bottom: 100px;
+///}
+
+.pozadi {
+	height: 600px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    display: flex;
+	justify-content: space-evenly;    
+}
+
+
+.menu li {
+    margin: 5px, 20px;
+
+	
+}
+
+.menu a {
+	padding: 20px;
+	text-decoration: none;
+	background-color: colors.$primary;
+	border: 3px solid colors.$primary;
+	border-radius: 30px;
+	color: whitesmoke;
+}
+
+@media screen and (max-width: 640px) {
+
+
+	.menu {margin-top: 10px;}	
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+	}
+	
+	.menu li {
+		margin: 30px;
+	}
+	
+	.menu a {
+		text-decoration: none;
+		background-color: black;
+		border: 3px solid white;
+		border-radius: 30px;
+		color: whitesmoke;
+		width: 100%;
+	}
+	.hlavicka {
+		margin-bottom: 10px;
+	}
+	
+}
