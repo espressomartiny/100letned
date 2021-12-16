@@ -1,17 +1,29 @@
 ---
-layout: layouts/page.njk
+layout: layouts/main.njk
 image: /images/intro640.jpg
 ---
 
-<h1>Napište nám, co nederlandistice přejete.</h1>
-<h2>Třeba jí to splníme.</h2>
+{% include 'partials/header.njk' %}
+{% include 'partials/menu.njk' %}
 
 
-<form class="wens" method="post" action="https://submit-form.com/cVgX2iQK">
+<main class="main">
+    <h1 class="form__title">Napište nám, co nederlandistice přejete.</h1>
+    <h2 class="form__subtitle">Třeba jí to splníme.</h2>
+     <div class="form__content">
+        <form class="wens" method="post" action="https://submit-form.com/cVgX2iQK">
 
-<!-- <label for="jmeno">Jméno</label> 
-<input type="text" name="jmeno" id="jmeno"> -->
+                    <!-- <label for="jmeno">Jméno</label> 
+                    <input type="text" name="jmeno" id="jmeno"> -->
+                    
+                    <textarea name="prani" id="prani" rows="20" cols="20" maxlength="1800" required></textarea>
+                    <button type="submit" name="odeslat" id="odeslat">Odeslat</button>
+                    </form>
+                    </div>
+    
+     
+    
+</main>
 
-<textarea name="prani" id="prani" rows="20" cols="20" maxlength="1800" required></textarea>
-<button type="submit" name="odeslat" id="odeslat">Odeslat</button>
-</form>
+
+{% include 'partials/footer.njk' %}

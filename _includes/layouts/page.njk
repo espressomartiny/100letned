@@ -7,7 +7,23 @@ layout: layouts/main.njk
 
 
 <main class="main">
-    {{ content | safe }}
+    <article class="article">
+
+        <h1 class="article__title">{{ title }}</h1>
+        <h2 class="article__subtitle">{{ subtitle }}</h2>
+        <div class="article__content">
+            
+            <div class="article__text">
+    
+                {{ content | safe }}
+    
+            </div>
+    
+            <img class="article__image" src="/images/{{photo}}" alt="{{alt}}">
+    
+        </div>
+    
+    </article>
 </main>
 
 

@@ -7,20 +7,21 @@ layout: layouts/main.njk
 
 
 <main class="main">
-    <article class="article">
+    <article class="project">
 
-        <h1 class="article__title">{{ title }}</h1>
-        <div class="article__content">
+        <h1 class="project__title">{{ title }}</h1>
+        <h2 class="project__author">{{ author }}</h2>
+        <div class="project__content">
             
-            <div class="article__text">
+            <div class="project__text">
     
-                <p class="article__perex"></p>
+                <p class="project__perex">{{ perex }}</p>
 
                 {{ content | safe }}
     
             </div>
     
-            <img class="article__image" src="" alt="">
+            <img class="project__image" src="/images/{{photo}}" alt="fotografie {{alt}}">
     
         </div>
     
