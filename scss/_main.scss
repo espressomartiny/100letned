@@ -1,89 +1,71 @@
-@use 'colors';
+@use "colors";
 
 /* intuitivnejsi box-sizing */
-*, :after, :before { box-sizing: border-box; }
-* {	font-family: 'Karla', sans-serif;}
-
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+* {
+  font-family: "Karla", sans-serif;
+}
 
 .main {
-	margin: 100px 150px;
+  margin: 100px 150px;
 }
 h1 {
-    color: colors.$secondary;
-    font-size: 38px;
-    
+  color: colors.$secondary;
+  font-size: 38px;
 }
 
-.article__content,
+.article__content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  text-align: justify;
+}
+
 .project__content {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 50px;
-    text-align: justify;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 50px;
+  text-align: justify;
 }
 
 .project__image {
-    max-width: 400px;
-    float: left;
-    margin: 0 30px 15px 0;
-  }
-  
-.article__image {
-    max-width: 400px;
-    float: right;
-    margin: 0 0 15px 30px;
-  }
-
-.student__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
+  max-width: 400px;
+  float: right;
+  margin: 0 30px 15px 0;
 }
-.student__text {
+
+.article__image {
+  max-width: 400px;
+  float: right;
+  margin: 0 0 15px 30px;
+}
+
+.article__image,
+.project__image {
+  border: 5px solid colors.$primary;
+  background-color: colors.$primary;
+  border-radius: 10% 0 5% 5%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+  .main {
+    margin: 100px 50px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main {
+    margin: 100px 50px;
+  }
+  .article__content,
+  .project__content,
+  .set__content {
     display: flex;
     flex-direction: column;
-	justify-content: space-between;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 500px;
-    
-}
-.student__text h3 {
-    border: 3px solid colors.$secondary;
-    border-radius: 2;
-    background-color: colors.$secondary;
-    opacity: 0.6;
-    margin: 0;
-    padding: 10px;
-}
-.student__text a {
-    text-decoration: none;
-}
-.student__text--down {
-    border: 3px solid colors.$primary;
-    background-color: colors.$primary;
-    padding: 10px;
-   
-}
-.student__text a {
-    color: colors.$secondary;
-    font-size: 20px;
-}
-.student__text p {
-    color: whitesmoke;
-}
-
-
-@media screen and (max-width: 640px) {
-    
-    .main {
-        margin: 100px 50px;
-    }
-    .article__content,
-    .project__content,
-    .student__content {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-    }
+    text-align: justify;
+  }
 }

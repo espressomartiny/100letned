@@ -35,8 +35,8 @@
 }
 
 .menu a:visited {
-  background-color: #256094;
-  border-color: #256094;
+  background-color: #09457a;
+  border-color: #09457a;
 }
 
 @media screen and (max-width: 640px) {
@@ -77,10 +77,6 @@
   margin-top: 10px;
 }
 
-.wens {
-  margin-left: 100px;
-}
-
 .wens textarea {
   width: 60%;
   height: 60%;
@@ -92,7 +88,7 @@
   border: 3px solid #d9591c;
   border-radius: 30px;
   color: black;
-  font-size: 16;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 640px) {
@@ -109,7 +105,9 @@
   }
 }
 /* intuitivnejsi box-sizing */
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
 }
 
@@ -126,17 +124,23 @@ h1 {
   font-size: 38px;
 }
 
-.article__content,
-.project__content {
+.article__content {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
   text-align: justify;
 }
 
+.project__content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 50px;
+  text-align: justify;
+}
+
 .project__image {
   max-width: 400px;
-  float: left;
+  float: right;
   margin: 0 30px 15px 0;
 }
 
@@ -146,49 +150,19 @@ h1 {
   margin: 0 0 15px 30px;
 }
 
-.student__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-}
-
-.student__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 500px;
-}
-
-.student__text h3 {
-  border: 3px solid #d9591c;
-  border-radius: 2;
-  background-color: #d9591c;
-  opacity: 0.6;
-  margin: 0;
-  padding: 10px;
-}
-
-.student__text a {
-  text-decoration: none;
-}
-
-.student__text--down {
-  border: 3px solid #003986;
+.article__image,
+.project__image {
+  border: 5px solid #003986;
   background-color: #003986;
-  padding: 10px;
+  border-radius: 10% 0 5% 5%;
+  margin-top: 20px;
 }
 
-.student__text a {
-  color: #d9591c;
-  font-size: 20px;
+@media screen and (max-width: 1040px) {
+  .main {
+    margin: 100px 50px;
+  }
 }
-
-.student__text p {
-  color: whitesmoke;
-}
-
 @media screen and (max-width: 640px) {
   .main {
     margin: 100px 50px;
@@ -196,7 +170,7 @@ h1 {
 
   .article__content,
 .project__content,
-.student__content {
+.set__content {
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -215,4 +189,66 @@ h1 {
   color: whitesmoke;
   padding-top: 10px;
   font-size: 14;
+}
+
+.paticka a:hover {
+  color: #d9591c;
+}
+
+.set__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.set__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.set__item h3 {
+  border: 3px solid #d9591c;
+  border-radius: 2;
+  background-color: #d9591c;
+  opacity: 0.6;
+  margin: 0;
+  padding: 10px;
+}
+
+.set__item a {
+  text-decoration: none;
+}
+
+.set__item--down {
+  border: 3px solid #003986;
+  background-color: #003986;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+.set__item a {
+  color: #d9591c;
+  font-size: 20px;
+}
+
+.set__item p {
+  color: whitesmoke;
+}
+
+.set__article {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.set__item a:hover {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.set__item h3 a {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
