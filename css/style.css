@@ -27,14 +27,23 @@
 }
 
 @media screen and (max-width: 640px) {
+  .hlavicka {
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 300px;
+    right: 20px;
+  }
+
   .menu {
     margin-top: 10px;
   }
 
   .menu ul {
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-wrap: wrap;
   }
 
   .menu li {
@@ -136,6 +145,7 @@ h1 {
 
 .student__text h3 {
   border: 3px solid #d9591c;
+  border-radius: 2;
   background-color: #d9591c;
   opacity: 0.6;
   margin: 0;
