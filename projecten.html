@@ -4,7 +4,7 @@ image: /images/intro640.jpg
 ---
 
 {% include 'partials/header.njk' %}
-{% include 'partials/menu.njk' %}
+
 
 
 <main class="main">
@@ -12,17 +12,20 @@ image: /images/intro640.jpg
         <h1 class="student__title">Studentské projekty</h1>
         <p>Na tomto místě budou postupně zveřejňovány projekty studentů navržené v rámci semináře Nederlandistika v mezinárodní perspektivě</p>
             <div class="student__content">
-                <div class="student__text">
-                    {% for student in collections.project %}
-                    <h3>{{ student.data.title }}</h3>
-                    <p>{{ student.data.perex}}</p>
-                    <p> <a href="{{ student.url }}">Detail projektu</a> </p>
-                    <h3>{{ student.data.author}}</h3>
-                    <div class="student__image">
+                {% for student in collections.project %}
+                <div class="student__text" style="background-image: url(/images/{{student.data.photo}})">
+                    <div class="student__text--up"><h3>{{ student.data.author}}</h3></div>
+                    <div class="student__text--down">
+                    <h4><a href="{{ student.url }}">{{ student.data.title }}</a></h4>
+               
+                    
+                   
+                    <p>{{ student.data.perex}}</p></div>
+                  <!--  <div class="student__image">
                         <img src="/images/{{student.data.photo}}" alt="{{alt}}">
+                    </div> -->
                     </div>
                     {% endfor %}
-                </div>
             </div>
     </article>
 </main>
