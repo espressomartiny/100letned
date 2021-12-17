@@ -34,22 +34,22 @@ image: /images/intro640.jpg
         {% for student in collections.project %}
         <div class="set__item" style="background-image: url(/images/{{student.data.photo}})">
             <div class="set__item--up">
-                    <h3><a class="set__a--up" href="{{ student.url }}">{{ student.data.author }}</a></h3>
+                <h3><a href="{{ student.url }}">{{ student.data.author }}</a></h3>
             </div>
             <div class="set__item--down">
-                    <h4><a href="{{ student.url }}">{{ student.data.title }}</a></h4>
+                <h4><a href="{{ student.url }}">{{ student.data.title }}</a></h4>
 
 
 
-                    <p>{{ student.data.perex}}</p>
-                </div>
-                <!--  <div class="student__image">
+                <p>{{ student.data.perex}}</p>
+            </div>
+            <!--  <div class="student__image">
                         <img src="/images/{{student.data.photo}}" alt="{{alt}}">
                     </div> -->
-            </div>
+        </div>
         {% endfor %}
     </div>
-    
+
 </main>
 
 

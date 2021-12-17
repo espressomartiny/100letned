@@ -1,67 +1,63 @@
 @use "colors";
 
-
 .set__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-    justify-items: center;
-  }
-  .set__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 350px;
-    
-  }
-  .set__item h3 {
-    border: 3px solid colors.$secondary;
-    border-radius: 2;
-    background-color: colors.$secondary;
-    opacity: 0.6;
-    margin: 0;
-    padding: 10px;
-  }
-  .set__item a {
-    text-decoration: none;
-  }
-  .set__item--down {
-    border: 3px solid colors.$primary;
-    background-color: colors.$primary;
-    padding: 10px;
-    opacity: 0.8;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.set__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 350px;
+}
+.set__item h3 {
+  border: 3px solid colors.$secondary;
+  border-radius: 2;
+  background-color: colors.$secondary;
+  opacity: 0.6;
+  margin: 0;
+  padding: 10px;
+}
+.set__item a {
+  text-decoration: none;
+}
+.set__item--down {
+  border: 3px solid colors.$primary;
+  background-color: colors.$primary;
+  padding: 10px;
+  opacity: 0.8;
+}
 
-  .set__item a {
-    color: colors.$secondary;
-    font-size: 20px;
-  }
-  .set__item p {
-    color: whitesmoke;
-  }
+.set__item a {
+  color: colors.$secondary;
+  font-size: 20px;
+}
+.set__item p {
+  color: whitesmoke;
+}
 
-  .set__article {
-      text-align: justify;
-      margin-bottom: 50px;
-  }
-  .set__item a:hover {
-    color: whitesmoke;
-    font-size: 22px;
-  }
- 
+.set__article {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+.set__item a:hover {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
 .set__item h3 a {
-    color: black
+  color: black;
 }
 
 @media screen and (max-width: 640px) {
-    
-    .set__content {
-      display: flex;
-      flex-direction: column;
-      text-align: justify;
-    }
+  .set__content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
   }
-  
+}
