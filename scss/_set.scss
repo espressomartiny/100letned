@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+    justify-items: center;
   }
   .set__item {
     display: flex;
@@ -13,6 +14,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 500px;
+    width: 350px;
+    
   }
   .set__item h3 {
     border: 3px solid colors.$secondary;
@@ -53,4 +56,12 @@
     color: black
 }
 
+@media screen and (max-width: 640px) {
+    
+    .set__content {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+    }
+  }
   

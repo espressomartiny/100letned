@@ -133,15 +133,15 @@ h1 {
 
 .project__content {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 4fr;
   gap: 50px;
   text-align: justify;
 }
 
 .project__image {
   max-width: 400px;
-  float: right;
   margin: 0 30px 15px 0;
+  justify-self: right;
 }
 
 .article__image {
@@ -158,6 +158,10 @@ h1 {
   margin-top: 20px;
 }
 
+.project__perex {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1040px) {
   .main {
     margin: 100px 50px;
@@ -169,15 +173,19 @@ h1 {
   }
 
   .article__content,
-.project__content,
-.set__content {
+.project__content {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
+    gap: 10px;
+  }
+
+  h1 {
+    margin-top: 0;
   }
 }
 .paticka {
-  background-color: #003986;
+  background-color: #09457a;
   height: 50px;
   margin-top: 100px;
   display: flex;
@@ -187,7 +195,7 @@ h1 {
 .paticka a {
   text-decoration: none;
   color: whitesmoke;
-  padding-top: 10px;
+  padding-top: 15px;
   font-size: 14;
 }
 
@@ -199,6 +207,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
+  justify-items: center;
 }
 
 .set__item {
@@ -208,6 +217,7 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
+  width: 350px;
 }
 
 .set__item h3 {
@@ -251,4 +261,12 @@ h1 {
 
 .set__item h3 a {
   color: black;
+}
+
+@media screen and (max-width: 640px) {
+  .set__content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
 }/*# sourceMappingURL=style.css.map */
