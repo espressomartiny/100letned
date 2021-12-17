@@ -36,10 +36,21 @@
 	color: whitesmoke;
 }
 
+.menu a:hover {
+    color: colors.$secondary;
+}
+.menu a:active {
+	border: 3px solid colors.$secondary;
+}
+.menu a:visited {
+	background-color: colors.$primaryshade;
+	border-color: colors.$primaryshade;
+}
+
+
 @media screen and (max-width: 640px) {
 	
 	.pozadi {
-		//background-image: url(images/intro-phone.jpg);
 		height: 750px;
 	}
 	.hlavicka {
@@ -50,16 +61,7 @@
 		bottom: 30px;
 		right: 20px;
 	}
-
-	.menu {
-		margin-top: 10px;
-	}	
 	.menu ul {
-		display: flex;
-		//grid-template-columns: 1fr 1fr 1fr;
-    	//gap: 20px;
-		// flex-direction: column;
-		// justify-content: left;
 		flex-wrap: wrap;
 	}
 	
@@ -67,12 +69,6 @@
 		margin: 30px;
 	}
 	
-	.menu a {
-		text-decoration: none;
-		border-radius: 30px;
-		color: whitesmoke;
-		width: 100%;
-	}
 	.hlavicka {
 		margin-bottom: 10px;
 	}

@@ -20,10 +20,25 @@
 
 .wens button {
 	padding: 20px;
-	background-color: black;
-	border: 3px solid white;
+	background-color: colors.$secondary;
+	border: 3px solid colors.$secondary;
 	border-radius: 30px;
-	color: whitesmoke;
+	color: black;
 	font-size: 16;
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+.wens {
+	margin-left: 0;
+}
+.wens textarea {
+	width: 100%;
+}
+main {
+	margin-left: 0;
+}
 
 }
