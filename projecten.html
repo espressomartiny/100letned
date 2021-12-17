@@ -1,8 +1,35 @@
 ---
-layout: layouts/page.njk
+layout: layouts/main.njk
+image: /images/intro640.jpg
 ---
 
-<h1>Studentské projekty</h1>
+{% include 'partials/header.njk' %}
+{% include 'partials/menu.njk' %}
 
-<p>Na tomto místě budou postupně zveřejňovány projekty studentů navržené v rámci semináře Nederlandistika v mezinárodní perspektivě</p>
+
+<main class="main">
+    <article class="student">
+        <h1 class="student__title">Studentské projekty</h1>
+        <p>Na tomto místě budou postupně zveřejňovány projekty studentů navržené v rámci semináře Nederlandistika v mezinárodní perspektivě</p>
+            <div class="student__content">
+                <div class="student__text">
+                    {% for student in collections.project %}
+                    <h3>{{ student.data.title }}</h3>
+                    <p>{{ student.data.perex}}</p>
+                    <p> <a href="{{ student.url }}">Detail projektu</a> </p>
+                    <h3>{{ student.data.author}}</h3>
+                    <div class="student__image">
+                        <img src="/images/{{student.data.photo}}" alt="{{alt}}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </article>
+</main>
+
+
+{% include 'partials/footer.njk' %}
+
+
+
 

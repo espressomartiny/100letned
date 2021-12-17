@@ -33,3 +33,16 @@ h1 {
     float: right;
     margin: 0 0 15px 30px;
   }
+
+.student__content {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: flex;
+}
+h3 {
+    border: 3px solid $secondary;
+}
+.student__image img {
+    border: 3px solid $secondary;
+}

@@ -121,6 +121,13 @@ h1 {
   margin: 0 0 15px 30px;
 }
 
+.student__content {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: flex;
+}
+
 .paticka {
   background-color: #003986;
   height: 50px;
