@@ -129,7 +129,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-size: inherit;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
 }
@@ -195,7 +195,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
   }
